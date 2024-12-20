@@ -1,0 +1,71 @@
+{
+    "farmers": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "john@example.com",
+            "password": "hashed_password_1",
+            "farmName": "Sunny Acres",
+            "products": [
+                {
+                    "id": 1,
+                    "productName": "Fresh Cow Milk",
+                    "quantity": 100,
+                    "price": 2.5,
+                    "description": "Organic fresh cow milk.",
+                    "image": "images/cow_milk.jpg"
+                },
+                {
+                    "id": 2,
+                    "productName": "Goat Milk",
+                    "quantity": 50,
+                    "price": 3.0,
+                    "description": "Fresh goat milk.",
+                    "image": "images/goat_milk.jpg"
+                }
+            ],
+            "animalsForSale": [
+                {
+                    "id": 1,
+                    "animalType": "Cow",
+                    "breed": "Holstein",
+                    "age": 2,
+                    "price": 1500,
+                    "healthStatus": "Healthy"
+                },
+                {
+                    "id": 2,
+                    "animalType": "Goat",
+                    "breed": "Nubian",
+                    "age": 1,
+                    "price": 300,
+                    "healthStatus": "Healthy"
+                }
+            ]
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "password": "hashed_password_2",
+            "cart": []
+        }
+    ],
+    "orders": [
+        {
+            "orderId": 1,
+            "userId": 1,
+            "farmerId": 1,
+            "items": [
+                {
+                    "productId": 1,
+                    "quantity": 2
+                }
+            ],
+            "totalAmount": 5.0,
+            "status": "Pending"
+        }
+    ]
+}

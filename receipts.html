@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm's App</title>
+    <link rel="stylesheet" href="receipts.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Animal Farm Marketplace</h1>
+        <nav>
+            <ul>
+                <li><a href="#farmer">Farmer Login/Register</a></li>
+                <li><a href="#user">User Login/Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="tabs">
+            <button class="tab-button" data-section="farmer">Farmer Section</button>
+            <button class="tab-button" data-section="user">User Section</button>
+        </div>
+        
+        <div id="farmer" class="tab-content">
+            <h2>Farmer Section</h2>
+            <!-- Farmer content goes here -->
+            <div id="farmer" class="tab-content">
+                <h2>Farmer Login</h2>
+                <form id="farmer-form">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                    <button type="button" class="submit-button" id="farmer-login">Login</button>
+                </form>
+            </div>
+            <section id="farmer">
+                <h2>Farmer Section</h2>
+                <form>
+                    <h3>Login / Register</h3>
+                    <input type="text" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                    <button type="button">Register</button>
+                </form>
+    
+                <h3>Add New Milk Products</h3>
+                <form id="add-milk-product">
+                    <input type="text" name="productName" placeholder="Product Name" required>
+                    <input type="number" name="quantity" placeholder="Quantity" required>
+                    <input type="number" name="price" placeholder="Price" required>
+                    <textarea name="description" placeholder="Description"></textarea>
+                    <button type="submit">Add Product</button>
+                </form>
+                
+    
+                <h3>Update Animals for Sale</h3>
+<form id="update-animal-form">
+    <input type="text" name="animalType" placeholder="Animal Type" required>
+    <input type="text" name="breed" placeholder="Breed" required>
+    <input type="number" name="price" placeholder="Price" required>
+    <button type="submit">Update Animal</button>
+</form>
+
+<h3>Confirm / Reject Orders</h3>
+<form id="order-form">
+    <input type="text" name="orderId" placeholder="Order ID" required>
+    <button type="submit" id="confirm-order">Confirm Order</button>
+    <button type="button" id="reject-order">Reject Order</button>
+</form>
+
+            </section>
+        </div>
+        
+        <div id="user" class="tab-content hidden">
+            <h2>User Section</h2>
+            <!-- User content goes here -->
+            <div id="user" class="tab-content">
+                <h2>User Login</h2>
+                <form id="user-form">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                    <button type="button" class="submit-button" id="user-login">Login</button>
+                </form>
+            </div>
+            <section id="user">
+                <h2>User Section</h2>
+                <form id="user-auth">
+                    <h3>Login / Register</h3>
+                    <input type="text" name="Email" placeholder="Email" required>
+                    <input type="password" name="Password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                    <button type="button">Register</button>
+                </form>
+              <form id="animal-item"
+                
+              <h3>View All Listed Animals</h3>
+                <div class="animal-item">
+                        <h4>Animal Name</h4>
+                        <p>Breed: Example Breed</p>
+                        <p>Price: $100</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <!-- Repeat for more animals -->
+                    <h3>Checkout</h3>
+                    <form id="Checkout">
+                        <h4>Your Cart</h4>
+                        <p>Animal Name - Quantity</p>
+                        <button type="submit">Checkout</button>
+                    </form>
+        
+                    <h3>Payment</h3>
+                    <form id="Payment">
+                        <input type="text" placeholder="PaymentMethod (e.g., M-Pesa)" required>
+                        <button type="submit">Pay</button>
+                    </form>
+                </div>
+    
+                
+            </section>
+        </div>
+        
+      
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Animal Farm Marketplace</p>
+    </footer>
+    <script src="receipts.js"></script>
+</body>
+
+</html>
