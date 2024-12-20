@@ -71,3 +71,4 @@ This data is currently hardcoded for demonstration purposes but could later be r
 - User Profiles: Allow users and farmers to view and edit their profiles.
 
 ## License
+this project is licensed under aidan.marube@gmail.com
